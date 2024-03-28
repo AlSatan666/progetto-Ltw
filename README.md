@@ -21,4 +21,6 @@ livelli / difficolta bot
 
 4/5 pagine (gioco, registrazione( 1 pagina quando enti, rigistrazioe/login/registrati piu tardi) , personalizzazione, tutorial, parte per commenti pagina a se stante o sotto tutorial)
 
-nella parte a sinistra c'è il menu per la navigazione delle pagine, fisso non a tendina.
+nella parte a sinistra c'è il menu per la navigazione delle pagine, fisso non a tendina. ci sara anche la parte per registrazione/login con menu modale
+
+
