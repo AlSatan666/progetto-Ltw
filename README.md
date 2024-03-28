@@ -22,4 +22,4 @@ pagina con tutorial
 
 pagina di login
 
-4 pagine (gioco, registrazione, personalizzazione, tutorial)
+4 pagine (gioco, registrazione( 1 pagina quando enti, rigistrazioe/login/registrati piu tardi) , personalizzazione, tutorial)
