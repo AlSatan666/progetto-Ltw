@@ -18,8 +18,7 @@ freccia per tornare indietro di x mosse
 
 livelli / difficolta bot
 
-pagina con tutorial
-
-pagina di login
 
 4/5 pagine (gioco, registrazione( 1 pagina quando enti, rigistrazioe/login/registrati piu tardi) , personalizzazione, tutorial, parte per commenti pagina a se stante o sotto tutorial)
+
+nella parte a sinistra c'è il menu per la navigazione delle pagine, fisso non a tendina.
