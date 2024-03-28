@@ -3,20 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScaccoMatto</title>
-    <link rel="stylesheet" href="stili.css"> <!--parte per css -->
-    <script src="script.js"></script>  <!--parte per javascript -->
+    <title>Fante,Cavallo e Re</title>
+    <link rel="stylesheet" href="stili.css"> <!-- parte per css -->
+    <script src="script.js"></script>  <!-- parte per javascript -->
+    <style>
+        /* Stile per il menu laterale */
+        #menu {
+            width: 200px;
+            height: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 50; /*altezza,da lasciare*/
+            left: 0;
+            padding-top: 160px; /* Per spostare/posizionare i bottoni lungo il menù */
+        }
+
+        #menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu ul li {
+            padding: 10px;
+        }
+
+        #menu ul li a {
+			display: block; /* Imposta i bottoni come blocchi per gestire la larghezza e l'altezza */
+            width: 100%; /* Imposta la larghezza del bottone al 100% del contenitore */
+            padding: 50x; /* Aggiunge spazio intorno al testo del bottone */
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Aggiunta di padding al titolo */
+        header h1 {
+            padding-left: 220px; /* Aggiusta il valore di padding a tuo piacimento */
+        }
+       
+        /* Stile per il footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0; /* Imposta il footer all'estrema sinistra dello schermo */
+            width: 200px;
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Benvenuto a ScaccoMatto</h1>
+        <h1>Benvenuto a Fante,Cavallo e Re</h1>
     </header>
+
+    <!-- Menu laterale -->
+    <div id="menu">
+        <ul>
+			<li><a href="index.html">Gioco</a></li> <!-- A destra i nomi mostrati nella pagina web, a sinistra modifica il codice -->
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="commenti.html">Commenti</a></li>
+            <li><a href="personalizzazione.html">Personalizzazione</a></li>
+            <li><a href="login.html">Login</a></li>
+            <!-- Aggiungi altri bottoni o collegamenti qui -->
+        </ul>
+    </div>
+
     <main>
         <!-- Work in progress -->
     </main>
+
     <footer>
         <p>Creato da [Topo Giggio]</p>
     </footer>
 </body>
 </html>
-
