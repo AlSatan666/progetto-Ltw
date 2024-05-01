@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Chiudi la connessione al database
             pg_close($connection);
             // Reindirizza alla pagina di destinazione desiderata dopo il login
-            header("Location: file:///Users/alessio/Desktop/progetto-Ltw-proj1/index.html#"); // Sostituisci "file:..." con l'URL della pagina a cui desideri reindirizzare l'utente
+            header("Location: https://alsatan666.github.io/progetto-Ltw/"); // Sostituisci "file:..." con l'URL della pagina a cui desideri reindirizzare l'utente
             exit;
         } else {
             // Credenziali errate, mostra un messaggio di errore
