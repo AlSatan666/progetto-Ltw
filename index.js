@@ -39,7 +39,7 @@ body.addEventListener("click", e =>{
 document.addEventListener('DOMContentLoaded', function () {
     const loginBtn = document.getElementById('loginBtn');
     const loginModal = document.getElementById('loginModal');
-    const closeModal = document.querySelector('.close');
+    const closeModal = document.querySelectorAll('.close');
     const registerModal = document.getElementById('registerModal');
     const loginLink = document.getElementById('login-link');
     const registerLink = document.getElementById('register-link');
@@ -48,9 +48,12 @@ document.addEventListener('DOMContentLoaded', function () {
         loginModal.style.display = 'block';
     });
 
-    closeModal.addEventListener('click', function () {
-        loginModal.style.display = 'none';
-    });
+    closeModal.forEach((button) => {
+        button.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+            registerModal.style.display = 'none';
+        })
+    }); //chisura per entrambe le modal
 
     window.addEventListener('click', function (e) {
         if (e.target == loginModal) {
