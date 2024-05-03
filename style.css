@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
 
 * {
     font-family: "Poppins", sans-serif;
@@ -235,7 +235,7 @@ nav .navbar .logo img {
 }
 
 .modal .modal-content .form-element {
-    margin:15px 0px;
+    margin: 0px 0px;
 }
 
 .modal .modal-content .form-element label{
@@ -244,7 +244,8 @@ nav .navbar .logo img {
 }
 
 .modal .modal-content  .form-element input[type="email"],
-.modal .modal-content .form-element input[type="password"] {
+.modal .modal-content .form-element input[type="password"],
+.modal .modal-content .form-element input[type="text"]{
     margin-top: 5px;
     display:block;
     width:100%;
