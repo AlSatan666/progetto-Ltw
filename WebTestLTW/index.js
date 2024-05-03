@@ -33,3 +33,40 @@ body.addEventListener("click", e =>{
         nav.classList.remove("active");
     }
 })
+
+
+// Gestione apertura e chiusura finestra modale per il login
+document.addEventListener('DOMContentLoaded', function () {
+    const loginBtn = document.getElementById('loginBtn');
+    const loginModal = document.getElementById('loginModal');
+    const closeModal = document.querySelector('.close');
+    const registerModal = document.getElementById('registerModal');
+    const loginLink = document.getElementById('login-link');
+    const registerLink = document.getElementById('register-link');
+
+    loginBtn.addEventListener('click', function () {
+        loginModal.style.display = 'block';
+    });
+
+    closeModal.addEventListener('click', function () {
+        loginModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function (e) {
+        if (e.target == loginModal) {
+            loginModal.style.display = 'none';
+        }
+    });
+
+    registerLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        loginModal.style.display = 'none';
+        registerModal.style.display = 'block';
+    })
+
+    loginLink.addEventListener("click", function(e) {
+        e.preventDefault();
+        registerModal.style.display = 'none';
+        loginModal.style.display = 'block';
+    })
+});

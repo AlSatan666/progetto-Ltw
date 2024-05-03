@@ -31,7 +31,11 @@
                     <li><a href="#">Gioca</a></li>
                     <li><a href="#">Tutorial</a></li>
                     <li><a href="#">Personalizza</a></li>
+                    <li><a href="#" id="loginBtn"><i class='bx bx-log-in-circle'></i> Login </a></li>
                 </ul>
+
+
+
             </div> 
 
             <div class="dark-light">
@@ -40,6 +44,71 @@
             </div>
         </div>
     </nav>
+
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="post" action="./login.php">
+                <h2>Login</h2>
+                <div class="form-element">
+                    <label for="emailInput">Email:</label><br>
+                    <input type="email" id="emailInput" name="email"  placeholder="Inserisci l'email" required autofocus><br>
+                </div>
+                <div class="form-element">
+                    <label for="passwordInput">Password:</label><br>
+                    <input type="password" id="passwordInput" name="password" placeholder="Inserisci la password" required><br>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox"  id="remember-me" name="remember-me">
+                    <label for="remember-me"> Ricordami </label>
+                </div>
+                <div class="register-form">
+                    Non sei ancora registrato?
+                    <a href="#" id="register-link">Registrati qui!</a>
+                </div>
+                <div class="form-element">
+                    <button type="submit">Accedi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="POST" action="register.php">
+                <h2>Registrazione</h2>
+                <div class="form-element">
+                    <label for="nameInput">Nome:</label><br>
+                    <input type="text" id="nameInput" name="name"  placeholder="Inserisci il tuo nome" required autofocus><br>
+                </div>
+                <div class="form-element">
+                    <label for="surnameInput">Cognome:</label><br>
+                    <input type="text" id="surnameInput" name="surname"  placeholder="Inserisci il tuo cognome" required autofocus><br>
+                </div>
+                <div class="form-element">
+                    <label for="emailInput">Email:</label><br>
+                    <input type="email" id="emailInput" name="email"  placeholder="Inserisci l'email" required autofocus><br>
+                </div>
+                <div class="form-element">
+                    <label for="passwordInput">Password:</label><br>
+                    <input type="password" id="passwordInput" name="password" placeholder="Inserisci la password" required><br>
+                </div>
+                <div class="form-element">
+                    <input type="checkbox"  id="remember-me" name="remember-me">
+                    <label for="remember-me"> Ricordami </label>
+                </div>
+                <div class="login-form">
+                    Sei già registrato?
+                    <a href="#" id="login-link">Loggati qui!</a>
+                </div>
+                <div class="form-element">
+                    <button type="submit">Registrati</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="./index.js"></script>
     
 </body>
