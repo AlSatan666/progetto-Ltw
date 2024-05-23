@@ -1,0 +1,1 @@
+var scacchiera = new Chessboard('scacchieraGioca', 'start');
