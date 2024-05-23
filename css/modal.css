@@ -1,0 +1,116 @@
+/* Stili per la finestra modale */
+.modal {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 380px;
+    padding:20px 30px;
+    background-color: var(--color-menu); /*sfondo finestra*/
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 244);
+    border-radius: 10px;
+}
+
+.modal .modal-content h2{
+    text-align: center;
+    color:var(--color-text); /*scritta login*/
+    margin: 10px 0px 20px;
+    font-size: 25px;
+
+}
+
+.modal .modal-content .form-element {
+    margin: 0px 0px;
+}
+
+.modal .modal-content .form-element label{
+    font-size: 14px;
+    color:var(--color-text);
+}
+
+.modal .modal-content  .form-element input[type="email"],
+.modal .modal-content .form-element input[type="password"],
+.modal .modal-content .form-element input[type="text"]{
+    margin-top: 5px;
+    display:block;
+    width:100%;
+    padding:10px;
+    outline:none;
+    border: 1px solid var(--color-text);
+    border-radius:5px;
+}
+
+.modal .modal-content .form-element input[type="checkbox"] {
+    margin: 0px;
+}
+
+.modal .modal-content .form-element button{
+    width:100%;
+    height: 40px;
+    border:none;
+    outline: none;
+    font-size: 16px;
+    background:var(--color-text); /*sfondo bottone accedi*/
+    color: var(--color-menu); /* scritta "Accedi" */
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+
+
+.modal .modal-content .register-form {
+    padding-bottom: 10px;
+}
+
+.modal .modal-content .login-form {
+    padding-bottom: 10px;
+}
+
+.modal .modal-content .register-form{
+    color: var(--color-text);
+}
+
+.modal .modal-content .register-form a{
+    color: var(--color-register);
+}
+
+.modal .modal-content .login-form{
+    color: var(--color-text);
+}
+
+.modal .modal-content .login-form a{
+    color: var(--color-register);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right:10px;
+    width: 15px;
+    height: 15px;
+    background: var(--color-close);
+    color:var(--color-menu);
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--color-text);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body.dark .modal-content {
+    background-color: var(--color-sidemenu);
+    color: var(--color-menu);
+}
+
+
+
+

@@ -1,0 +1,164 @@
+
+.container-scacchiera {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 60px; 
+}
+
+.scacchiera {
+    width: 400px;
+    height: 400px;
+}
+
+.container-bottoni {
+    margin-top: 20px; /* Spazio sopra i bottoni */
+    margin-left: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.container-bottoni button {
+    margin: 0 10px; /* Spazio tra i bottoni */
+    font-size: 20px;
+    border: 0;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.interpreter {
+    color: var(--color-text);
+    text-align: center;
+    margin-top: 20px; /* Spazio sopra il paragrafo */
+    margin-bottom: 10px;
+}
+
+#nuovaPartita {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.container-slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container-slider input[type="range"] {
+    width: 250px; 
+    margin: 0;
+    margin-left: 20px; 
+    padding: 0;
+    display: block;
+}
+
+
+
+/*hey*/
+
+
+
+.container-slider datalist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    writing-mode: horizontal-tb;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.container-slider option {
+    padding: 0;
+}
+
+/* Aggiungi questi stili a scacchiera.css */
+
+.container-slider {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+datalist option {
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    position: relative;
+    top: -10px; /* (per l'allineamento) */
+}
+
+/* Aggiungi questo blocco alla fine del file */
+body.dark .container-slider label {
+    color: #ffffff;
+}
+
+body.dark input[type="range"] {
+    background-color: #444444;
+}
+
+body.dark datalist option {
+    color: #ffffff;
+}
+
+/* Bordo ai pulsanti */
+.container-bottoni button {
+    margin: 0 10px; /* (spazio tra i bottoni) */
+    font-size: 20px;
+    border: 1px solid #4CAF50;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark .container-bottoni button {
+    background-color: #444444;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
