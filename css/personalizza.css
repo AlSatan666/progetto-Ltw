@@ -20,31 +20,6 @@
     height: 40px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.menu-links li {
-    margin: 0 10px;
-}
-
-.menu-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu-links a:hover {
-    text-decoration: underline;
-}
 
 .dark-light {
     cursor: pointer;
